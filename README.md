@@ -1,68 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BluciferBNB - Application for Vacation Rentals Around Denver
 
-## Available Scripts
+## Pair project by Caleb Haizlett and Kim McCaskill during Module 3 at Turing School of Software and Design
 
-In the project directory, you can run:
+### Learning Goals:
 
-### `npm start`
+- Make informed design decisions to create a user-friendly application.
+- Keep state based components to a minimum and leverage more functional components.
+- Use a modular architecture for your application file structure.
+- Think deeply about React Lifecycle Methods.
+- Become familiar with promises, nested fetch requests, and handling the UI based on acceptance of data.
+- Become familiar with routing and how to handle dynamic routes.
+- Use propTypes for every component receiving props.
+- Write tests for React components and some asynchronous functionality.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Overview of Site:
+- We utilize an external API that houses data about different areas of Denver and associated rentals available in the those areas.
+- The user has ability to: 
+  - Log in
+  - Search through different areas with descriptions
+  - Check listings in each area with details of each listing
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### BluciferBNB
+<img width="1440" alt="Screen Shot 2020-01-30 at 4 02 27 PM" src="https://user-images.githubusercontent.com/54483332/73498227-eb89c580-4379-11ea-81e3-4a7e4ba2f4b7.png">
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used:
+- Javascript/React
+- HTML/CSS
+- Jest/Enzyme
 
-### `npm run build`
+### Systems/Practices
+- git/Version Control
+- OOP
+- TDD
+- Trello/Project Management
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Fork then clone down this repository. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then install the library dependencies. Run:
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To verify that it is setup correctly, run `npm start` in your terminal. Go to `http://localhost:8080/` and you should see a page with some `h1` text and a pink background. If that's the case, you're good to go. Enter `control + c` in your terminal to stop the server at any time.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## How to View Your Code in Action
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In the terminal, run:
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Browser should open up with localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Running Tests
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Run your test suite using the command:
 
-### Analyzing the Bundle Size
+```
+npm test
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+The test results will output to the terminal.
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
