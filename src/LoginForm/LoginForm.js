@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './LoginForm.css'
 
 class LoginForm extends Component {
   constructor() {
@@ -15,15 +16,17 @@ class LoginForm extends Component {
   }
   render() {
     return (
-      <form>
+      <form className='login-form'>
+        <label>Name</label>
         <input
           name='name'
-          placeholder="Name..."
+          placeholder='Name...'
           value={this.state.name}
           onChange={this.updateChange}
         />
+        <label>Email</label>
         <input
-          placeholder="Email..."
+          placeholder='Email...'
         />
         <div>
           <button
