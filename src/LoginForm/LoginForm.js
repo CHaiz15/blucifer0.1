@@ -14,6 +14,12 @@ class LoginForm extends Component {
     e.preventDefault();
     this.setState({[e.target.name]: e.target.value})
   }
+
+  submitForm = (e) => {
+    e.preventDefault()
+    this.props.addFormInfo(this.state)
+  }
+
   render() {
     return (
       <form className='login-form'>
@@ -45,7 +51,7 @@ class LoginForm extends Component {
             onClick={this.updateChange}
           >Other</button>
         </div>
-        <button>Explore</button>
+        <button onClick={this.submitForm}>Explore</button>
       </form>
     )
   }
