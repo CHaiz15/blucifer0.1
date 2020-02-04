@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import './App.css';
 import { fetchAreaDetails } from '../helpers'
 import LoginForm from '../LoginForm/LoginForm.js'
+import Header from '../Header/Header.js'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      areas: []
+      areas: [],
+      user: {
+        name: '',
+        purpose: ''
+      }
     }
   }
 
@@ -18,12 +23,19 @@ class App extends Component {
       .then(areas => this.setState({areas: areas}))
   }
 
+  addFormInfo = (info) => {
+    this.setState({user: info})
+  }
+
   render() {
     return (
-      <main className='main-content'>
-        <h1>Blucifer BnB</h1>
-        <LoginForm />
-      </main>
+      <div>
+        <main className='main-content'>
+          <h1>Blucifer BnB</h1>
+          <LoginForm addFormInfo={this.addFormInfo}/>
+        </main>
+        <Header name={this.state.user.name} purpose={this.state.user.purpose}/>
+      </div>
     )
   }
 }
