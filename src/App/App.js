@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { fetchAreaDetails } from '../helpers'
+import LoginForm from '../LoginForm/LoginForm.js'
 
 class App extends Component {
   constructor() {
@@ -19,7 +20,10 @@ class App extends Component {
 
   render() {
     return (
-      null
+      <main>
+        <h1>Blucifer BnB</h1>
+        <LoginForm />
+      </main>
     )
   }
 }
