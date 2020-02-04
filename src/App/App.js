@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import { fetchAreaDetails } from '../helpers'
-import LoginForm from '../LoginForm/LoginForm.js'
-import Header from '../Header/Header.js'
+import { fetchAreaDetails } from '../helpers';
+import LoginForm from '../LoginForm/LoginForm.js';
+import Header from '../Header/Header.js';
+import AreasContainer from '../AreasContainer/AreasContainer.js';
 
 class App extends Component {
   constructor() {
@@ -35,6 +36,7 @@ class App extends Component {
           <LoginForm addFormInfo={this.addFormInfo}/>
         </main>
         <Header name={this.state.user.name} purpose={this.state.user.purpose}/>
+        <AreasContainer areas={this.state.areas}/>
       </div>
     )
   }
