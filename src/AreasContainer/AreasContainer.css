@@ -1,0 +1,8 @@
+.areas-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.areas-title {
+  text-align: center;
+}
