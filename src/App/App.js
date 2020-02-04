@@ -20,7 +20,7 @@ class App extends Component {
 
   render() {
     return (
-      <main>
+      <main className='main-content'>
         <h1>Blucifer BnB</h1>
         <LoginForm />
       </main>
