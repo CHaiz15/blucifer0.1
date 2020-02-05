@@ -7,4 +7,24 @@
   width: 40%;
   height: 200px;
   margin: 4.5%;
+  cursor: pointer;
+}
+.area-card:hover {
+  animation: shadow-inset-center 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.hovered-card {
+  text-align: center;
+  padding: 5%;
+}
+
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, 0.5);
+  }
 }
