@@ -3,7 +3,13 @@ import './AreasContainer.css'
 import AreaCard from '../AreaCard/AreaCard.js'
 
 const AreasContainer = ({ areas }) => {
-  const appendedAreas = areas.map(area => <AreaCard areaName={area.name} shortName={area.shortName} about={area.about}/>)
+  const appendedAreas = areas.map(area => 
+    <AreaCard 
+      areaName={area.name} 
+      shortName={area.shortName} 
+      about={area.about} 
+      listings={area.listings}
+    />)
   return(
     <>
       <h2 className="areas-title">Pick a neighborhood</h2>
