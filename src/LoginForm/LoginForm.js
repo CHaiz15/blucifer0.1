@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './LoginForm.css'
+import { Redirect } from 'react-router-dom';
 
 class LoginForm extends Component {
   constructor() {
@@ -18,14 +19,23 @@ class LoginForm extends Component {
   }
 
   submitForm = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     this.state.name && this.state.email && this.state.purpose ?
-    this.props.addFormInfo(this.state):this.setState({formFilled: true});
+    this.routeToAreas():this.setState({formFilled: true});
+  }
+
+  routeToAreas = () => {
+    this.props.addFormInfo(this.state);
+    return (
+      <Redirect from='/' to='/nav/areas'/>
+    )
   }
 
   render() {
     return (
+    <main className='main-content'>
       <form className='login-form'>
+        <h1>Blucifer BnB</h1>
         <label>Name</label>
         <input
           name='name'
@@ -57,11 +67,12 @@ class LoginForm extends Component {
             onClick={this.updateChange}
           >Other</button>
         </div>
-        <button onClick={this.submitForm}>Explore</button>
+          <button onClick={this.submitForm}>Explore</button>
         <h4
         className={this.state.formFilled ? 'input-error':'hidden'}
         >Please fill all inputs.</h4>
       </form>
+    </main>
     )
   }
 }
