@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './AreaCard.css';
+import { fetchListings } from '../helpers.js'
 
   class AreaCard extends Component {
   constructor() {
@@ -14,6 +15,12 @@ import './AreaCard.css';
   hoverFalse = () => {
     this.setState({hover: false})
   }
+
+  componentDidMount() {
+    fetchListings(this.props.listings)
+    .then(listings => this.setState({listings}))
+  }
+
   render() {
     let hoveredCard =
       <div className='hovered-card'>
