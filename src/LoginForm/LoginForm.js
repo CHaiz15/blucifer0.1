@@ -18,14 +18,16 @@ class LoginForm extends Component {
   }
 
   submitForm = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     this.state.name && this.state.email && this.state.purpose ?
     this.props.addFormInfo(this.state):this.setState({formFilled: true});
   }
 
   render() {
     return (
+    <main className='main-content'>
       <form className='login-form'>
+        <h1>Blucifer BnB</h1>
         <label>Name</label>
         <input
           name='name'
@@ -62,6 +64,7 @@ class LoginForm extends Component {
         className={this.state.formFilled ? 'input-error':'hidden'}
         >Please fill all inputs.</h4>
       </form>
+    </main>
     )
   }
 }
