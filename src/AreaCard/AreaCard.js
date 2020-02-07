@@ -16,11 +16,6 @@ import { fetchListings } from '../helpers.js'
     this.setState({hover: false})
   }
 
-  componentDidMount() {
-    fetchListings(this.props.listings)
-    .then(listings => this.setState({listings}))
-  }
-
   render() {
     let hoveredCard =
       <div className='hovered-card'>
