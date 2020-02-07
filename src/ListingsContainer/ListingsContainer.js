@@ -6,7 +6,7 @@ const ListingsContainer = ({ listings }) => {
   const appendedListings = listings.map(area => 
     <ListingCard />)
   return(
-
+    <h1>YO</h1>
   )
 }
 
