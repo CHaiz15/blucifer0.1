@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { fetchAreaDetails } from '../helpers';
+import { fetchAreaDetails, fetchListings } from '../helpers';
 import LoginForm from '../LoginForm/LoginForm.js';
 import Header from '../Header/Header.js';
 import AreasContainer from '../AreasContainer/AreasContainer.js';
@@ -23,7 +23,13 @@ class App extends Component {
     fetch('http://localhost:3001/api/v1/areas')
       .then(response => response.json())
       .then(areaData => fetchAreaDetails(areaData))
-      .then(areas => this.setState({areas: areas}))
+      .then(areas => {
+        this.setState({areas: areas})
+        const arrOfSeperateListings = areas.map(area => area.listings)
+        return arrOfSeperateListings.reduce((acc, listingArray) => acc.concat(listingArray), [])
+      })
+      .then(listings => fetchListings(listings))
+      .then(listings => this.setState({listings: listings}))
   }
 
   addFormInfo = (info) => {
@@ -36,7 +42,7 @@ class App extends Component {
         <Route exact path='/' render={() => <LoginForm addFormInfo={this.addFormInfo}/>} />
         <Route path='/nav' render={() => <Header name={this.state.user.name} purpose={this.state.user.purpose}/>} />
         <Route exact path='/nav/areas' render={() => <AreasContainer areas={this.state.areas}/>} />
-        <Route path='/nav/areas/:area_id' render={() => <ListingsContainer />} />
+        <Route path='/nav/areas/:area_id' render={() => <ListingsContainer listings={this.state.listings}/>} />
       </main>
     )
   }
