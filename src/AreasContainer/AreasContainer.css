@@ -1,6 +1,8 @@
 .areas-container {
   display: flex;
   flex-wrap: wrap;
+  color: black;
+  text-decoration: none;
 }
 
 .areas-title {
