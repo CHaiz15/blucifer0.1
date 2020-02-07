@@ -12,11 +12,17 @@ class App extends Component {
     super();
     this.state = {
       areas: [],
+      listings: [],
+      selectedAreaId: '',
       user: {
         name: '',
         purpose: ''
       }
     }
+  }
+  
+  addSelectedArea = (id) => {
+    this.setState({selectedAreaId: id})
   }
 
   componentDidMount() {
@@ -41,8 +47,8 @@ class App extends Component {
       <main>
         <Route exact path='/' render={() => <LoginForm addFormInfo={this.addFormInfo}/>} />
         <Route path='/nav' render={() => <Header name={this.state.user.name} purpose={this.state.user.purpose}/>} />
-        <Route exact path='/nav/areas' render={() => <AreasContainer areas={this.state.areas}/>} />
-        <Route path='/nav/areas/:area_id' render={() => <ListingsContainer listings={this.state.listings}/>} />
+        <Route exact path='/nav/areas' render={() => <AreasContainer addSelectedArea={this.addSelectedArea} areas={this.state.areas}/>} />
+        <Route path='/nav/areas/:area_id' render={() => <ListingsContainer selectedAreaId={this.state.selectedAreaId} listings={this.state.listings}/>} />
       </main>
     )
   }
