@@ -16,9 +16,13 @@ import { fetchListings } from '../helpers.js'
     this.setState({hover: false})
   }
 
+  selectArea = () => {
+    this.props.addSelectedArea(this.props.id)
+  }
+
   render() {
     let hoveredCard =
-      <div className='hovered-card'>
+      <div value={this.props.id} onClick={this.selectArea}className='hovered-card'>
         <h1>{this.props.shortName}</h1>
         <p>{this.props.about}</p>
       </div>;
