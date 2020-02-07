@@ -3,10 +3,11 @@ import './AreasContainer.css'
 import AreaCard from '../AreaCard/AreaCard.js'
 import { Link } from 'react-router-dom';
 
-const AreasContainer = ({ areas }) => {
+const AreasContainer = ({ areas, addSelectedArea }) => {
   const appendedAreas = areas.map(area => 
     <Link className="areas-container" to={`/nav/areas/${area.id}`}>
       <AreaCard 
+        addSelectedArea={addSelectedArea}
         id={area.id}
         areaName={area.name} 
         shortName={area.shortName} 
