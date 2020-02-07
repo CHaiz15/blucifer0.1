@@ -4,6 +4,7 @@ import { fetchAreaDetails } from '../helpers';
 import LoginForm from '../LoginForm/LoginForm.js';
 import Header from '../Header/Header.js';
 import AreasContainer from '../AreasContainer/AreasContainer.js';
+import ListingsContainer from '../ListingsContainer/ListingsContainer.js';
 import { Route } from 'react-router-dom';
 
 class App extends Component {
@@ -34,7 +35,8 @@ class App extends Component {
       <main>
         <Route exact path='/' render={() => <LoginForm addFormInfo={this.addFormInfo}/>} />
         <Route path='/nav' render={() => <Header name={this.state.user.name} purpose={this.state.user.purpose}/>} />
-        <Route path='/nav/areas' render={() => <AreasContainer areas={this.state.areas}/>} />
+        <Route exact path='/nav/areas' render={() => <AreasContainer areas={this.state.areas}/>} />
+        <Route path='/nav/areas/:area_id' render={() => <ListingsContainer />} />
       </main>
     )
   }
