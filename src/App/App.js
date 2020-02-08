@@ -5,6 +5,7 @@ import LoginForm from '../LoginForm/LoginForm.js';
 import Header from '../Header/Header.js';
 import AreasContainer from '../AreasContainer/AreasContainer.js';
 import ListingsContainer from '../ListingsContainer/ListingsContainer.js';
+import ListingDetails from '../ListingDetails/ListingDetails.js';
 import { Route } from 'react-router-dom';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       areas: [],
       listings: [],
       selectedAreaId: '',
+      selectedListingId: '',
       user: {
         name: '',
         purpose: ''
@@ -23,6 +25,10 @@ class App extends Component {
   
   addSelectedArea = (id) => {
     this.setState({selectedAreaId: id})
+  } 
+
+  addSelectedListing = (id) => {
+    this.setState({selectedListingId: id})
   }
 
   componentDidMount() {
@@ -48,7 +54,8 @@ class App extends Component {
         <Route exact path='/' render={() => <LoginForm addFormInfo={this.addFormInfo}/>} />
         <Route path='/nav' render={() => <Header name={this.state.user.name} purpose={this.state.user.purpose}/>} />
         <Route exact path='/nav/areas' render={() => <AreasContainer addSelectedArea={this.addSelectedArea} areas={this.state.areas}/>} />
-        <Route path='/nav/areas/:area_id' render={() => <ListingsContainer selectedAreaId={this.state.selectedAreaId} listings={this.state.listings}/>} />
+        <Route exact path='/nav/areas/:area_id/listings' render={() => <ListingsContainer addSelectedListing={this.addSelectedListing} selectedAreaId={this.state.selectedAreaId} listings={this.state.listings}/>} />
+        <Route exact path='/nav/areas/:area_id/listings/:listing_id' render={() => <ListingDetails key={this.state.selectedListingId} listingId={this.state.selectedListingId} listings={this.state.listings}/>} />
       </main>
     )
   }

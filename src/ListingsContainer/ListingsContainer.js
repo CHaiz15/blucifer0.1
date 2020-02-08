@@ -2,17 +2,14 @@ import React from 'react';
 import './ListingsContainer.css'
 import ListingCard from '../ListingCard/ListingCard.js'
 
-const ListingsContainer = ({ selectedAreaId, listings }) => {
+const ListingsContainer = ({ addSelectedListing, selectedAreaId, listings }) => {
     const filteredListings = listings.filter(listing => listing.area_id === selectedAreaId)
-    console.log('selectedAreaId',selectedAreaId)
-    console.log('filteredListings', filteredListings)
-    const appendedListings = filteredListings.map(listing => 
-        <ListingCard name={listing.name}/>
+    const appendedListings = filteredListings.map((listing, i) =>         
+        <ListingCard key={i} addSelectedListing={addSelectedListing} {...listing} {...listing.details} areaId={selectedAreaId}/>
     )
-    console.log(appendedListings)
     return(
         <section>
-            <h1>YO</h1>
+            <h2>{filteredListings.length} places to stay</h2>
             {appendedListings}
         </section>
     )
