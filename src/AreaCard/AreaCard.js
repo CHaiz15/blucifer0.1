@@ -22,17 +22,17 @@ import { fetchListings } from '../helpers.js'
 
   render() {
     let hoveredCard =
-      <div value={this.props.id} onClick={this.selectArea}className='hovered-card'>
-        <h1>{this.props.shortName}</h1>
+      <div value={this.props.id} onClick={this.selectArea} className='hovered-card'>
+        <h2>{this.props.shortName}</h2>
         <p>{this.props.about}</p>
       </div>;
-    let originalCard = <h1>{this.props.areaName}</h1>;
+    let originalCard = <h1 className="card-title">{this.props.areaName}</h1>;
 
     return (
       <div
-        className="area-card"
         onMouseOver={this.hoverTrue}
         onMouseLeave={this.hoverFalse}
+        className="card-div"
       >
         {this.state.hover ? hoveredCard : originalCard}
       </div>
