@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const AreasContainer = ({ areas, addSelectedArea }) => {
   const appendedAreas = areas.map(area => 
-    <Link className="areas-container" to={`/nav/areas/${area.id}`}>
+    <Link className="area-card" to={`/nav/areas/${area.id}`}>
       <AreaCard 
         addSelectedArea={addSelectedArea}
         id={area.id}
@@ -17,12 +17,12 @@ const AreasContainer = ({ areas, addSelectedArea }) => {
     </Link>
   )
   return(
-    <>
+    <section className="post-login">
       <h2 className="areas-title">Pick a neighborhood</h2>
-      <section>
+      <section className="areas-container">
         {appendedAreas}
       </section>
-    </>
+    </section>
   )
 }
 
