@@ -17,12 +17,12 @@ const AreasContainer = ({ areas, addSelectedArea }) => {
     </Link>
   )
   return(
-    <>
+    <section className="post-login">
       <h2 className="areas-title">Pick a neighborhood</h2>
-      <section>
+      <section className="areas-container">
         {appendedAreas}
       </section>
-    </>
+    </section>
   )
 }
 

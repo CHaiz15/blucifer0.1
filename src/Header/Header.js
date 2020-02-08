@@ -10,7 +10,7 @@ const Header = ({ name,purpose }) => {
     <header className="header">
       <h3>Welcome, {name}!</h3>
       <h3>{purpose}, made easy.</h3>
-      <button onClick={logout}>Logout</button>
+      <button className="logout-btn" onClick={logout}>Logout</button>
     </header>
   )
 }
