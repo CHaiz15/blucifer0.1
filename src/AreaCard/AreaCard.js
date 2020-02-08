@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './AreaCard.css';
-import { fetchListings } from '../helpers.js'
 
   class AreaCard extends Component {
   constructor() {
