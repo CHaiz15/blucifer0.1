@@ -14,6 +14,7 @@ class LoginForm extends Component {
       formFilled: false
     }
   }
+
   updateChange = (e) => {
     e.preventDefault();
     this.setState({[e.target.name]: e.target.value})
@@ -37,46 +38,60 @@ class LoginForm extends Component {
     }
 
     return (
-    <main className='main-content'>
-      <form className='login-form'>
-        <h1>Blucifer BnB</h1>
-        <label>Name</label>
-        <input
-          name='name'
-          placeholder='Name...'
-          value={this.state.name}
-          onChange={this.updateChange}
-        />
-        <label>Email</label>
-        <input
-          name='email'
-          placeholder='Email...'
-          value={this.state.email}
-          onChange={this.updateChange}
-        />
-        <div>
-          <button
-            name='purpose'
-            value='Business'
-            onClick={this.updateChange}
-          >Business</button>
-          <button
-            name='purpose'
-            value='Vacation'
-            onClick={this.updateChange}
-          >Vacation</button>
-          <button
-            name='purpose'
-            value='Travel'
-            onClick={this.updateChange}
-          >Other</button>
-        </div>
-          <button onClick={this.submitForm}>Explore</button>
-        <h4
-        className={this.state.showError ? 'input-error':'hidden'}
-        >Please fill all inputs.</h4>
-      </form>
-    </main>
+      <main className='main-content'>
+        <h1 className='title'>BLUCIFER BNB</h1>
+          <form className='login-form'>
+            <h3 className="text-center">LOGIN</h3>
+              <div className="input-container">
+                <input 
+                required
+                type="text" 
+                className='user-input'
+                name='name'
+                value={this.state.name}
+                onChange={this.updateChange}
+                autoComplete="off"
+                />
+                <label>Full Name</label>		
+              </div>
+              <div class="input-container">		
+                <input 
+                required
+                type="mail" 
+                className='user-input'
+                name='email'
+                value={this.state.email}
+                onChange={this.updateChange}
+                autoComplete="off"
+                />
+                <label>Email</label>
+              </div>
+              <div className='purpose-buttons'>
+                <button
+                  className='purpose-btn'
+                  name='purpose'
+                  value='Business'
+                  onClick={this.updateChange}
+                >BUSINESS</button>
+                <button
+                  className='purpose-btn'
+                  name='purpose'
+                  value='Vacation'
+                  onClick={this.updateChange}
+                >VACATION</button>
+                <button
+                  className='purpose-btn'
+                  name='purpose'
+                  value='Travel'
+                  onClick={this.updateChange}
+                >OTHER</button>
+              </div>
+                <button type="button" className="explore-btn" onClick={this.submitForm}>EXPLORE DENVER</button>
+                <h4
+                className={this.state.showError ? 'input-error':'hidden'}
+                >Please fill all inputs.</h4>
+          </form>
+      </main>
     )
   }
 }
