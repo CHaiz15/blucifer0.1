@@ -1,5 +1,5 @@
 .post-login {
-  background-image: url("../bg-img.jpg");
+  background-image: url("../assets/aerial-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -20,7 +20,7 @@
   margin: 8vh 0 0 0;
   padding: 2% 0 0 0;
   color: #fff;
-  text-shadow: 0 0 2px #000;
+  text-shadow: 0 0 3px #000;
   font-size: 2.5em;
 }
 
