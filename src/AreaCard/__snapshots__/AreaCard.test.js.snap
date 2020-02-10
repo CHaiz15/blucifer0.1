@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AreaCard should be an instance of AreaCard component 1`] = `
+<div
+  className="card-div"
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+>
+  <h1
+    className="card-title"
+  />
+</div>
+`;
