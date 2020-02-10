@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm should be an instance of LoginForm component 1`] = `
+<main
+  className="main-content"
+>
+  <h1
+    className="title"
+  >
+    BLUCIFER BNB
+  </h1>
+  <form
+    className="login-form"
+  >
+    <h3
+      className="text-center"
+    >
+      LOGIN
+    </h3>
+    <div
+      className="input-container"
+    >
+      <input
+        autoComplete="off"
+        className="user-input"
+        name="name"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+      <label>
+        Full Name
+      </label>
+    </div>
+    <div
+      className="input-container"
+    >
+      <input
+        autoComplete="off"
+        className="user-input"
+        name="email"
+        onChange={[Function]}
+        required={true}
+        type="mail"
+        value=""
+      />
+      <label>
+        Email
+      </label>
+    </div>
+    <div
+      className="purpose-buttons"
+    >
+      <button
+        className="purpose-btn"
+        name="purpose"
+        onClick={[Function]}
+        value="Business"
+      >
+        BUSINESS
+      </button>
+      <button
+        className="purpose-btn"
+        name="purpose"
+        onClick={[Function]}
+        value="Vacation"
+      >
+        VACATION
+      </button>
+      <button
+        className="purpose-btn"
+        name="purpose"
+        onClick={[Function]}
+        value="Travel"
+      >
+        OTHER
+      </button>
+    </div>
+    <button
+      className="explore-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      EXPLORE DENVER
+    </button>
+    <h4
+      className="hidden"
+    >
+      Please fill all inputs.
+    </h4>
+  </form>
+</main>
+`;
