@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListingsContainer should be an instance of ListingsContainer component 1`] = `
+<section>
+  <h2>
+    0
+     places to stay
+  </h2>
+</section>
+`;

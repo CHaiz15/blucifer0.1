@@ -8,6 +8,7 @@ const ListingCard = ({ addSelectedListing, areaId, listing_id, name, cost_per_ni
 
     return (
         <div>
+            <img src={process.env.PUBLIC_URL + `/images/${listing_id}_a.jpg`} />
             <h2>{name}</h2>
             <p>{cost_per_night} / Night</p>
             <Link to={`/nav/areas/${areaId}/listings/${listing_id}`}><button onClick={selectListing}>Details</button></Link>

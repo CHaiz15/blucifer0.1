@@ -54,7 +54,7 @@ class LoginForm extends Component {
                 />
                 <label>Full Name</label>		
               </div>
-              <div class="input-container">		
+              <div className="input-container">		
                 <input 
                 required
                 type="mail" 
