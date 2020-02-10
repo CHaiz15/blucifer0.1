@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should be an instance of Header component 1`] = `
+<header
+  className="header"
+>
+  <img
+    alt="logo"
+    className="blucifer-logo"
+    src="DarkLogo.png"
+  />
+  <h3>
+    Welcome, 
+    !
+  </h3>
+  <h3>
+    , made easy.
+  </h3>
+  <button
+    className="logout-btn"
+    onClick={[Function]}
+  >
+    Logout
+  </button>
+</header>
+`;
