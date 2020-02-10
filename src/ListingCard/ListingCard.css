@@ -1,0 +1,33 @@
+.listing-card {
+  margin: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  border-bottom: solid 1px black;
+}
+
+.listing-img {
+  width: 35%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.listing-info {
+  margin-left: 5%;
+}
+
+.listing-cost {
+  display: flex;
+  flex-direction: row;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.details-btn {
+  background-color: #002244;
+  color: #fff;
+  font-size: 1em;
+  height: 15%;
+  width: 60%;
+}
