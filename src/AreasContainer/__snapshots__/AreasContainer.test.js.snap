@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AreasContainer should be an instance of AreaContainer component 1`] = `
+<section
+  className="post-login"
+>
+  <h2
+    className="areas-title"
+  >
+    Pick a neighborhood
+  </h2>
+  <section
+    className="areas-container"
+  />
+</section>
+`;
