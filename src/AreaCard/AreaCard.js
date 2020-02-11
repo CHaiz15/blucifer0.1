@@ -22,7 +22,7 @@ import './AreaCard.css';
   render() {
     let hoveredCard =
       <div value={this.props.id} onClick={this.selectArea} className='hovered-card'>
-        <h2>{this.props.shortName}</h2>
+        <h2 className='short-name'>{this.props.shortName}</h2>
         <p>{this.props.about}</p>
       </div>;
     let originalCard = <h1 className="card-title">{this.props.areaName}</h1>;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './ListingCard.css'
 
 const ListingCard = ({ addSelectedListing, areaId, listing_id, name, cost_per_night }) => {
-    let selectListing = () => {
+    const selectListing = () => {
         addSelectedListing(listing_id)
     }
 

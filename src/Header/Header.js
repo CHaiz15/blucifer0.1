@@ -9,8 +9,10 @@ const logout = () => {
 const Header = ({ name,purpose }) => {
   return (
     <header className="header">
-      <img className='blucifer-logo' src={logo} alt='logo'/>
-      <h3>Welcome, {name}!</h3>
+      <div className='welcome-holder'>
+        <img className='blucifer-logo' src={logo} alt='logo'/>
+        <h3 className='user-welcome'>Welcome, {name}!</h3>
+      </div>
       <h3>{purpose}, made easy.</h3>
       <button className="logout-btn" onClick={logout}>Logout</button>
     </header>
