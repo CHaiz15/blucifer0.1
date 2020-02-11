@@ -18,16 +18,14 @@
 .listing-cost {
   display: flex;
   flex-direction: row;
-}
-
-.price {
   font-weight: bold;
+
 }
 
 .details-btn {
   background-color: #002244;
   color: #fff;
   font-size: 1em;
-  height: 15%;
-  width: 60%;
+  height: 5vh;
+  width: 15vw;
 }
