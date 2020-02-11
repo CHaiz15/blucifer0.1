@@ -6,8 +6,9 @@
 }
 
 .listing-name {
-    margin: 2% 0 2% 2%;
+    margin: 1% 0 1% 2%;
     text-shadow: 0 0 1px #000;
+    font-size: 1.25em;
 }
 
 .listing-title {
@@ -21,6 +22,7 @@
 
 .features-list {
     list-style: none;
+    text-transform: capitalize;
 }
 
 .listing-details {
@@ -33,7 +35,6 @@
 .listing-features {
     list-style: none;
     margin: 0 0 0 2%;
-    font-weight: bolder;
     font-size: 1.25em;
     text-shadow: 0 0 1px #000;
 }
@@ -50,14 +51,6 @@
     box-shadow: 0 0 2px #000;
     width: 33.33333%;
     object-fit: cover;
-}
-
-.favorite-btn {
-    background-color: #002244;
-    color: #fff;
-    font-size: 1em;
-    height: 20%;
-    width: 30%;
 }
 
 .switch {
