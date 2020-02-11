@@ -1,22 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ListingCard should be an instance of ListingCard component 1`] = `
-<div>
+<div
+  className="listing-card"
+>
   <img
+    className="listing-img"
     src="/images/undefined_a.jpg"
   />
-  <h2 />
-  <p>
-     / Night
-  </p>
-  <Link
-    to="/nav/areas/undefined/listings/undefined"
+  <section
+    className="listing-info"
   >
-    <button
-      onClick={[Function]}
+    <h2
+      className="listing-title"
+    />
+    <p
+      className="listing-cost"
     >
-      Details
-    </button>
-  </Link>
+      <p
+        className="price"
+      >
+        $
+      </p>
+       / Night
+    </p>
+    <Link
+      to="/nav/areas/undefined/listings/undefined"
+    >
+      <button
+        className="details-btn"
+        onClick={[Function]}
+      >
+        Details
+      </button>
+    </Link>
+  </section>
 </div>
 `;
