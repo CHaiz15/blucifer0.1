@@ -19,9 +19,17 @@
   - Log in
   - Search through different areas with descriptions
   - Check listings in each area with details of each listing
+  - 'Favorite' a listing to have all favorited listings show on a seperate page
 
 ### BluciferBNB
-<img width="1440" alt="Screen Shot 2020-01-30 at 4 02 27 PM" src="https://user-images.githubusercontent.com/54483332/73498227-eb89c580-4379-11ea-81e3-4a7e4ba2f4b7.png">
+#### Login:
+<img width="1440" alt="Screen Shot 2020-02-11 at 4 23 55 PM" src="https://user-images.githubusercontent.com/54483332/74288891-e8cc9000-4cea-11ea-85cb-20b440a0aa62.png">
+
+#### Listings Available:
+<img width="1440" alt="Screen Shot 2020-02-11 at 4 24 44 PM" src="https://user-images.githubusercontent.com/54483332/74288940-04d03180-4ceb-11ea-8ae4-805aab92c058.png">
+
+#### Listing Page: 
+<img width="1440" alt="Screen Shot 2020-02-11 at 4 25 11 PM" src="https://user-images.githubusercontent.com/54483332/74288974-174a6b00-4ceb-11ea-828c-31430f6f2363.png">
 
 
 ### Technologies Used:
@@ -31,11 +39,15 @@
 
 ### Systems/Practices
 - git/Version Control
+- Trello/Project Management
+- draw.io/Sketch & Wireframing
 - OOP
 - TDD
-- Trello/Project Management
+
 
 ## Setup
+
+Clone down this [external API](https://github.com/turingschool/VRAD-API "Denver apartments API")
 
 Fork then clone down this repository. 
 
