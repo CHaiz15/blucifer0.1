@@ -10,6 +10,10 @@ describe('ListingsContainer', () => {
             addSelectedListing={jest.fn()}
             selectedAreaId='590'
             listings={[]}
+            areas={[{
+              id: 590,
+              name: "River North",
+            }]}
         />);
       expect(wrapper).toMatchSnapshot();
   });

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListingDetails should be an instance of ListingDetails component 1`] = `
+<div
+  className="listing-container"
+>
+  <div>
+    <h2
+      className="listing-title"
+    >
+      Hip RiNo Party Spot
+    </h2>
+    <p
+      className="listing-name"
+    >
+       
+      2250 Lawrence St
+      , 
+      80205
+    </p>
+    <div
+      className="images-container"
+    >
+      <img
+        alt="listing-image1"
+        className="listing-image1"
+        src="/images/3_a.jpg"
+      />
+      <img
+        alt="listing-image2"
+        className="listing-image2"
+        src="/images/3_b.jpg"
+      />
+      <img
+        alt="listing-image3"
+        className="listing-image3"
+        src="/images/3_c.jpg"
+      />
+    </div>
+    <div
+      className="listing-details"
+    />
+  </div>
+  <h4
+    className="listing-title"
+  >
+    FEATURES
+  </h4>
+  <div
+    className="listing-features"
+  >
+    <p>
+      3
+       Bed 
+      2.5
+       Bath
+    </p>
+    <p>
+      $
+      420
+       / Night
+    </p>
+    <ul
+      className="features-list"
+    >
+      <li>
+        hot tub
+      </li>
+      <li>
+        espresso machine
+      </li>
+    </ul>
+    <label
+      className="switch"
+    >
+      <input
+        checked={false}
+        onClick={[Function]}
+        readOnly={true}
+        type="checkbox"
+      />
+      <span
+        className="slider round"
+      />
+    </label>
+  </div>
+</div>
+`;
