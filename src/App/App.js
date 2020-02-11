@@ -54,8 +54,8 @@ class App extends Component {
         <Route exact path='/' render={() => <LoginForm addFormInfo={this.addFormInfo}/>} />
         <Route path='/nav' render={() => <Header name={this.state.user.name} purpose={this.state.user.purpose}/>} />
         <Route exact path='/nav/areas' render={() => <AreasContainer addSelectedArea={this.addSelectedArea} areas={this.state.areas}/>} />
-        <Route exact path='/nav/areas/:area_id/listings' render={() => <ListingsContainer addSelectedListing={this.addSelectedListing} selectedAreaId={this.state.selectedAreaId} listings={this.state.listings}/>} />
-        <Route exact path='/nav/areas/:area_id/listings/:listing_id' render={() => <ListingDetails key={this.state.selectedListingId} listingId={this.state.selectedListingId} listings={this.state.listings}/>} />
+        <Route exact path='/nav/areas/:area_id/listings' render={() => <ListingsContainer addSelectedListing={this.addSelectedListing} selectedAreaId={this.state.selectedAreaId} listings={this.state.listings} areas={this.state.areas} />} />
+        <Route exact path='/nav/areas/:area_id/listings/:listing_id' render={() => <ListingDetails key={this.state.selectedListingId} listingId={this.state.selectedListingId} listings={this.state.listings} />} />
       </main>
     )
   }
