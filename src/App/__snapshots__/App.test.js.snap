@@ -22,6 +22,10 @@ exports[`App should be an instance of App component 1`] = `
     render={[Function]}
   />
   <Route
+    path="/nav/favorites"
+    render={[Function]}
+  />
+  <Route
     exact={true}
     path="/nav/areas/:area_id/listings/:listing_id"
     render={[Function]}
