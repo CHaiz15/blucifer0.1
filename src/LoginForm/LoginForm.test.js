@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import LoginForm from './LoginForm';
-import { shallow } from 'enzyme'
+import { shallow } from 'enzyme';
 
 describe('LoginForm', () => {
   let wrapper;
