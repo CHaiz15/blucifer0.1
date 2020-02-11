@@ -13,15 +13,18 @@ exports[`ListingCard should be an instance of ListingCard component 1`] = `
     className="listing-info"
   >
     <h2 />
-    <div>
-      <p
-        className="listing-cost-per-night"
-      >
-        $
-         / Night
-      </p>
-      <Link
-        to="/nav/areas/undefined/listings/undefined"
+    <p
+      className="listing-cost"
+    >
+      $
+       / Night
+    </p>
+    <Link
+      to="/nav/areas/undefined/listings/undefined"
+    >
+      <button
+        className="details-btn"
+        onClick={[Function]}
       >
         <button
           className="details-btn"

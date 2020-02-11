@@ -1,3 +1,13 @@
+export const getData = () => {
+  return fetch('http://localhost:3001/api/v1/areas')
+    .then(response => {
+        if(!response.ok) {
+             throw Error('Error while fetching, did not get a 200 status code!')
+        }
+       return response.json()
+    })
+}
+
 export const fetchAreaDetails = (areaData) => {
   const promises = areaData.areas.map(area => {
     return fetch('http://localhost:3001' + area.details)
