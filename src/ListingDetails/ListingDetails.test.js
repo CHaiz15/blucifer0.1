@@ -30,7 +30,7 @@ describe('ListingDetails', () => {
                   "espresso machine"
               ]
     }
-}]} 
+  }]} 
         favoriteListings={[]}
     />);
   })
