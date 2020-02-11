@@ -32,14 +32,16 @@
 
 ### BluciferBNB
 #### Login:
-<img width="1440" alt="Screen Shot 2020-02-11 at 4 23 55 PM" src="https://user-images.githubusercontent.com/54483332/74288891-e8cc9000-4cea-11ea-85cb-20b440a0aa62.png">
+<img width="1440" alt="Screen Shot 2020-02-11 at 4 42 55 PM" src="https://user-images.githubusercontent.com/54483332/74289906-8f199500-4ced-11ea-88da-7df1420decb7.png">
+
+#### Areas in Denver:
+<img width="1440" alt="Screen Shot 2020-02-11 at 4 43 35 PM" src="https://user-images.githubusercontent.com/54483332/74289944-a8224600-4ced-11ea-872e-221f5c5f83e2.png">
 
 #### Listings Available:
-<img width="1440" alt="Screen Shot 2020-02-11 at 4 24 44 PM" src="https://user-images.githubusercontent.com/54483332/74288940-04d03180-4ceb-11ea-8ae4-805aab92c058.png">
+<img width="1440" alt="Screen Shot 2020-02-11 at 4 44 10 PM" src="https://user-images.githubusercontent.com/54483332/74289980-bd977000-4ced-11ea-9b3a-f5f3a5d5e4b1.png">
 
 #### Listing Page: 
-<img width="1440" alt="Screen Shot 2020-02-11 at 4 25 11 PM" src="https://user-images.githubusercontent.com/54483332/74288974-174a6b00-4ceb-11ea-828c-31430f6f2363.png">
-
+<img width="1440" alt="Screen Shot 2020-02-11 at 4 44 54 PM" src="https://user-images.githubusercontent.com/54483332/74290011-d6078a80-4ced-11ea-9e3a-7ff7680cf3df.png">
 
 ### Technologies Used:
 - Javascript/React
