@@ -13,6 +13,16 @@
 - Use propTypes for every component receiving props.
 - Write tests for React components and some asynchronous functionality.
 
+#### Wins:
+  - Building functional single-page application with React and testing all components
+  - Getting SOLID MVP through use of iterations and project board
+  
+#### Challenges
+  - Learning to test some asynchronous code with Jest/Enzyme
+  - Dynamic React Router intricacies
+  - Workflow with some remote days due to inclement weather
+  - 
+
 ### Overview of Site:
 - We utilize an external API that houses data about different areas of Denver and associated rentals available in the those areas.
 - The user has ability to: 
@@ -51,14 +61,13 @@ Clone down this [external API](https://github.com/turingschool/VRAD-API "Denver 
 
 Fork then clone down this repository. 
 
-Then install the library dependencies. Run:
+Then install the library dependencies for both repositories. Run:
 
 ```
 npm install
 ```
 
-To verify that it is setup correctly, run `npm start` in your terminal. Go to `http://localhost:8080/` and you should see a page with some `h1` text and a pink background. If that's the case, you're good to go. Enter `control + c` in your terminal to stop the server at any time.
-
+To verify that it is setup correctly, run `npm start` in your terminal for both repositories.  One will launch browser with localhost.
 
 ## How to View Your Code in Action
 
