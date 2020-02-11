@@ -21,7 +21,6 @@
   - Learning to test some asynchronous code with Jest/Enzyme
   - Dynamic React Router intricacies
   - Workflow with some remote days due to inclement weather
-  - 
 
 ### Overview of Site:
 - We utilize an external API that houses data about different areas of Denver and associated rentals available in the those areas.
