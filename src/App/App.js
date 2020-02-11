@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { fetchAreaDetails, fetchListings } from '../helpers';
+import { getData, fetchAreaDetails, fetchListings } from '../apiCalls/apiCalls';
 import LoginForm from '../LoginForm/LoginForm.js';
 import Header from '../Header/Header.js';
 import AreasContainer from '../AreasContainer/AreasContainer.js';
@@ -49,8 +49,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3001/api/v1/areas')
-      .then(response => response.json())
+    getData()
       .then(areaData => fetchAreaDetails(areaData))
       .then(areas => {
         this.setState({areas: areas})
