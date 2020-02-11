@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Favorites should be an instance of Favorites component 1`] = `
+<section
+  className="listings-pg"
+>
+  <div
+    className="listings-header"
+  >
+    <h2
+      className="area-title"
+    >
+      Favorites
+    </h2>
+  </div>
+  <h2
+    className="listing-count"
+  >
+    0
+     favorites
+  </h2>
+  <section
+    className="listings-container"
+  >
+    <p
+      className="no-favorites"
+    >
+      There are no favorited listings.
+    </p>
+  </section>
+</section>
+`;
