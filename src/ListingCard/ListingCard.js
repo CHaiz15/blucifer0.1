@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './ListingCard.css'
 
@@ -22,3 +23,11 @@ const ListingCard = ({ addSelectedListing, areaId, listing_id, name, cost_per_ni
 }
 
 export default ListingCard;
+
+ListingCard.propTypes = {
+    addSelectedListing: PropTypes.array, 
+    areaId: PropTypes.number, 
+    listing_id: PropTypes.number, 
+    name: PropTypes.string, 
+    cost_per_night: PropTypes.number
+}
