@@ -10,13 +10,11 @@
 }
 
 .title {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FB4F14;
   margin: 2% 0 0 0;
   font-weight: 900;
   font-size: 2.5em;
-  color: #ffffff;
-  text-shadow: 0 0 3px #000;
+  font-family: 'Montserrat', sans-serif;
+  color: #002244;
 }
 
 .text-center {
