@@ -26,9 +26,14 @@ exports[`ListingCard should be an instance of ListingCard component 1`] = `
         className="details-btn"
         onClick={[Function]}
       >
-        Details
-      </button>
-    </Link>
+        <button
+          className="details-btn"
+          onClick={[Function]}
+        >
+          Details
+        </button>
+      </Link>
+    </div>
   </section>
 </div>
 `;

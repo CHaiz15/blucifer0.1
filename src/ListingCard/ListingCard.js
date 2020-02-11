@@ -12,8 +12,10 @@ const ListingCard = ({ addSelectedListing, areaId, listing_id, name, cost_per_ni
             <img className='listing-img' alt='listing-img' src={process.env.PUBLIC_URL + `/images/${listing_id}_a.jpg`} />
             <section className='listing-info'>
                 <h2>{name}</h2>
-                <p className='listing-cost'>${cost_per_night} / Night</p>
-                <Link to={`/nav/areas/${areaId}/listings/${listing_id}`}><button  className='details-btn' onClick={selectListing}>Details</button></Link>
+                <div>
+                    <p className='listing-cost-per-night'>${cost_per_night} / Night</p>
+                    <Link to={`/nav/areas/${areaId}/listings/${listing_id}`}><button  className='details-btn' onClick={selectListing}>Details</button></Link>
+                </div>
             </section>
         </div>
     )
