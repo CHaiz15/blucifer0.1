@@ -4,15 +4,21 @@ exports[`Header should be an instance of Header component 1`] = `
 <header
   className="header"
 >
-  <img
-    alt="logo"
-    className="blucifer-logo"
-    src="DarkLogo.png"
-  />
-  <h3>
-    Welcome, 
-    !
-  </h3>
+  <div
+    className="welcome-holder"
+  >
+    <img
+      alt="logo"
+      className="blucifer-logo"
+      src="DarkLogo.png"
+    />
+    <h3
+      className="user-welcome"
+    >
+      Welcome, 
+      !
+    </h3>
+  </div>
   <h3>
     , made easy.
   </h3>
