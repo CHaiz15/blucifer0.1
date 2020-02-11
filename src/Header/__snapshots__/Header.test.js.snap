@@ -19,9 +19,19 @@ exports[`Header should be an instance of Header component 1`] = `
       !
     </h3>
   </div>
-  <h3>
+  <Link
+    className="logout-btn"
+    to="/nav/areas"
+  >
     , made easy.
-  </h3>
+  </Link>
+  <Link
+    className="logout-btn"
+    to="/nav/favorites"
+  >
+    Favorites(
+    )
+  </Link>
   <button
     className="logout-btn"
     onClick={[Function]}

@@ -5,23 +5,18 @@ exports[`ListingCard should be an instance of ListingCard component 1`] = `
   className="listing-card"
 >
   <img
+    alt="listing-img"
     className="listing-img"
     src="/images/undefined_a.jpg"
   />
   <section
     className="listing-info"
   >
-    <h2
-      className="listing-title"
-    />
+    <h2 />
     <p
       className="listing-cost"
     >
-      <p
-        className="price"
-      >
-        $
-      </p>
+      $
        / Night
     </p>
     <Link
