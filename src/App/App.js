@@ -19,7 +19,8 @@ class App extends Component {
       user: {
         name: '',
         purpose: ''
-      }
+      },
+      favoriteListings: []
     }
   }
   
@@ -30,6 +31,10 @@ class App extends Component {
   addSelectedListing = (id) => {
     this.setState({selectedListingId: id})
   }
+
+  addFavoritedListing = (id) => {
+    this.setState({favoriteListings: [...this.state.favoriteListings, id]})
+  } 
 
   componentDidMount() {
     fetch('http://localhost:3001/api/v1/areas')
@@ -55,7 +60,7 @@ class App extends Component {
         <Route path='/nav' render={() => <Header name={this.state.user.name} purpose={this.state.user.purpose}/>} />
         <Route exact path='/nav/areas' render={() => <AreasContainer addSelectedArea={this.addSelectedArea} areas={this.state.areas}/>} />
         <Route exact path='/nav/areas/:area_id/listings' render={() => <ListingsContainer addSelectedListing={this.addSelectedListing} selectedAreaId={this.state.selectedAreaId} listings={this.state.listings}/>} />
-        <Route exact path='/nav/areas/:area_id/listings/:listing_id' render={() => <ListingDetails key={this.state.selectedListingId} listingId={this.state.selectedListingId} listings={this.state.listings}/>} />
+        <Route exact path='/nav/areas/:area_id/listings/:listing_id' render={() => <ListingDetails key={this.state.selectedListingId} addFavoritedListing={this.addFavoritedListing} listingId={this.state.selectedListingId} listings={this.state.listings}/>} />
       </main>
     )
   }
