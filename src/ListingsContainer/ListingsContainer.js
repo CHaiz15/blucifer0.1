@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ListingsContainer.css'
 import ListingCard from '../ListingCard/ListingCard.js'
 
@@ -23,3 +24,10 @@ const ListingsContainer = ({ addSelectedListing, selectedAreaId, listings, areas
 }
 
 export default ListingsContainer;   
+
+ListingsContainer.propTypes = {
+    addSelectedListing: PropTypes.func,
+    selectedAreaId: PropTypes.number,
+    listings: PropTypes.array,
+    areas: PropTypes.array
+}

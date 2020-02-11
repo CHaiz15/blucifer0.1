@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Favorites.css'
 import ListingCard from '../ListingCard/ListingCard.js'
 
@@ -21,3 +22,10 @@ const Favorites = ({ addSelectedListing, selectedAreaId, listings, favoriteListi
 }
 
 export default Favorites;   
+
+Favorites.propTypes = {
+    addSelectedListing: PropTypes.func, 
+    selectedAreaId: PropTypes.number, 
+    listings: PropTypes.array, 
+    favoriteListings: PropTypes.array
+}

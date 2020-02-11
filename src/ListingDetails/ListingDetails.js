@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import './ListingDetails.css';
 
 class ListingDetails extends Component {
@@ -56,3 +57,11 @@ class ListingDetails extends Component {
 }
 
 export default ListingDetails;
+
+ListingDetails = {
+    addFavoritedListing: PropTypes.func,
+    removeFavoritedListing: PropTypes.func,
+    selectedListingId: PropTypes.number,
+    listings: PropTypes.array, 
+    favoriteListings: PropTypes.array
+}

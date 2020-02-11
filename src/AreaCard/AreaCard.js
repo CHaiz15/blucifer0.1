@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './AreaCard.css';
 
   class AreaCard extends Component {
@@ -40,3 +41,12 @@ import './AreaCard.css';
 }
 
 export default AreaCard;
+
+AreaCard.propTypes = {
+  addSelectedArea: PropTypes.func,
+  id: PropTypes.number,
+  areaName: PropTypes.string,
+  shortName: PropTypes.string, 
+  about: PropTypes.string,
+  listings: PropTypes.array,
+}

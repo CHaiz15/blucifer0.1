@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import './LoginForm.css'
 import { Redirect } from 'react-router-dom';
 
@@ -97,3 +98,7 @@ class LoginForm extends Component {
 }
 
 export default LoginForm;
+
+LoginForm.propTypes = {
+  addFormInfo: PropTypes.func
+}
