@@ -23,7 +23,7 @@
   - Workflow with some remote days due to inclement weather
 
 ### Overview of Site:
-- We utilize an external API that houses data about different areas of Denver and associated rentals available in the those areas.
+- We utilize an external API that houses data about different areas of Denver and associated rentals available in those areas.
 - The user has ability to: 
   - Log in
   - Search through different areas with descriptions
